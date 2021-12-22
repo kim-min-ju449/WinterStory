@@ -1,0 +1,39 @@
+div{
+    display:inline-block;
+    text-align: center;
+    width:180px;
+    height:140px;
+   
+    padding-top:20px;
+    
+    
+}
+.hobby{
+    background-color:white;
+}
+.container{
+    position: absolute;
+    
+    width:80%;
+    height:200px;
+    background-color:#AEEDFF;
+    margin:0 auto; 
+    text-align:center;
+    vertical-align:middle;
+    border-radius: 50px;
+}
+.next{
+    width:10px;
+    height:10px;
+    background-color:lightgray;
+    
+}
+button{
+    width:50px;
+    height:50px;
+    border-radius:50px;
+    padding-bottom:-30px;
+    
+    margin-bottom:100px;
+  
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.pixabay.com/photo/2016/11/17/14/24/bow-1831698_1280.png" rel="shortcut icon" type="image/x-icon">
+    <title>겨울이야기</title>
+</head>
+<body>
+    <div class="container">
+        
+        <ul class="navi">
+            <li data-image="https://cdn.pixabay.com/photo/2013/10/27/17/14/snowfall-201496_1280.jpg"><a href="#" data-text="WINTER">WINTER</a></li>
+            <li data-image="https://cdn.pixabay.com/photo/2015/12/04/09/13/leaves-1076307_1280.jpg"><a href="hobby.html" data-text="HOBBY">HOBBY</a></li>
+            <li data-image="https://cdn.pixabay.com/photo/2017/06/06/22/46/mediterranean-cuisine-2378758_1280.jpg"><a href="#" data-text="FOOD">FOOD</a></li>
+            <li data-image="https://cdn.pixabay.com/photo/2021/12/03/08/50/nature-6842159_1280.jpg"><a href="snow.html" data-text="SNOW">SNOW</a></li>
+        </ul>
+        <div class="photo"></div>
+        </div>
+        <script>
+            $('.navi li').mouseenter(function(){
+                var changeImage = $(this).attr("data-image")
+                $('.photo').css({
+                    'background-image': 'url('+changeImage+')'
+
+                })
+
+            })
+            $('.navi li').mouseleave(function(){
+                $('.photo').css({
+                    'background-image':''
+                })
+            })
+        </script>
+</body>
+</html>
