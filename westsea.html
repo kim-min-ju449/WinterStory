@@ -10,7 +10,7 @@
         body {
             margin: 0;
             background-image: url(https://cdn.pixabay.com/photo/2020/06/08/23/17/nature-5276366_1280.jpg);
-
+            display:block;
         }
 
         @font-face {
@@ -27,15 +27,16 @@
         }
 
         .items {
-            position: absolute;
+            position: relative;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, 10%);
             width: 100%;
-            text-align: center;
+           
+            
         }
         .item {
-            width: 300px;
+            width: 250px;
             height: 200px;
             display: inline-block;
             position: relative;
@@ -51,6 +52,7 @@
             position: absolute;
             transition: 0.5s;
             top: 0;
+           margin-bottom:50px;
         }
         .front {
             background-color: #333;
@@ -70,7 +72,8 @@
             background-color: #fff;
             color: #000;
             height: inherit;
-            text-align: center;
+            /*text-align: center;*/
+            width:250px;
             padding: 20px;
             box-sizing: border-box;
             opacity: 0;
@@ -107,12 +110,28 @@
 
 <body>
     <div class="container">
+        <div class="info">
         <h1>서해</h1>
         <p>우리나라의 서쪽 바다<br>
         인천, 
     <br>우리나라에서 가장 갯벌이 발달된 해이며, 전복, 미역, 천일염 생산량은 3면의 바다중 압도적이다.</p>
     <h2>서해 여행지들</h2>
+    </div>
+    
     <div class="items">
+        <div class="item">
+            <div class="front">
+                <img src="https://cdn.pixabay.com/photo/2016/11/18/23/41/sun-1837376_1280.png" width="100px" height="100px">
+                <h2>Mars</h2>
+            </div>
+            
+            <div class="back">
+                <p>
+                    dfgdfgfgsfsdgsdgsdsgsdgds
+                </p>
+                <a href="#">Sun</a>
+            </div>
+        </div>
         <div class="item">
             <div class="front">
                 <img src="https://cdn.pixabay.com/photo/2016/11/18/23/41/sun-1837376_1280.png" width="100px" height="100px">
